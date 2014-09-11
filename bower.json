@@ -1,0 +1,28 @@
+{
+  "name": "tool-template-react",
+  "version": "0.1.0",
+  "homepage": "https://github.com/alexkalderimis/tool-template-react",
+  "authors": [
+    "Alex Kalderimis <alexkalderimis@gmail.com>"
+  ],
+  "description": "An intermine steps tool for showing a results list.",
+  "main": "index.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "Apache2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jschannel": "mozilla/jschannel",
+    "imjs": "~3.6.1",
+    "underscore": "~1.6.0",
+    "jquery": "~2.1.0",
+    "requirejs": "~2.1.11",
+  }
+}
