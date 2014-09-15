@@ -43,19 +43,28 @@ require([
 
       // Add an event handler...
       $('#takeaction').click(function() {
-        alert("BAM");
+        notify("value")
       });
 
-      var list = {name: "I am a list name", type: "Genes"};
+      // var list = {name: "I am a list name", type: "Genes"};
 
-      chan.notify({
-        method: 'has-list',
-        params: {
-          scope: {
-            service: "myservice"
+      // var params = {service: params.service};
+
+      console.log("sending back parameter object", params);
+
+      // chan.notify({method: "has-list", params: params});
+
+      var notify = function(newData) {
+        chan.notify({
+          method: 'has-items',
+          params: {
+            type: "Unobtainium",
+            ids: [1,2,3,4,5]
           }
-        }
-      });
+        });
+      }
+
+      
 
       return "okay";
 
